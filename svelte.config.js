@@ -19,9 +19,6 @@ const config = {
 					'$styles': path.resolve('./src/styles'),
 				}
 			}
-		},
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
 		}
 	}
 };
