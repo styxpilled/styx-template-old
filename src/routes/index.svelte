@@ -8,9 +8,9 @@
 
 <section>
   <h1>
-    WELCOME! <br />
-    to your new <br />
-    SvelteKit app
+    <b>WELCOME!</b><br />
+    to your<br />
+    SvelteKit Styx Template app
   </h1>
   <h2>
     try editing <strong>src/routes/index.svelte</strong>
