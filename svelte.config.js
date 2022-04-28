@@ -4,23 +4,22 @@ import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [
-		preprocess({
-			postcss: true
-		})
-	],
-	kit: {
-		adapter: adapter(),
-		target: '#svelte',
-		vite: {
-			resolve: {
-				alias: {
-					'$lib': path.resolve('./src/lib'),
-					'$styles': path.resolve('./src/styles'),
-				}
-			}
-		}
-	}
+  preprocess: [
+    preprocess({
+      postcss: true
+    })
+  ],
+  kit: {
+    adapter: adapter(),
+    vite: {
+      resolve: {
+        alias: {
+          '$lib': path.resolve('./src/lib'),
+          '$styles': path.resolve('./src/styles'),
+        }
+      }
+    }
+  }
 };
 
 export default config;
