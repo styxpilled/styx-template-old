@@ -33,7 +33,10 @@
       "$lib/*": [
         "src/lib/*"
       ]
-    }
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
   },
   "include": [
     "src/**/*.d.ts",
