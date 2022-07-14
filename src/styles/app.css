@@ -1,5 +1,5 @@
 @import "@fontsource/fira-mono";
-@import "variables.pcss";
+@import "variables.css";
 
 :root {
   font-family:
@@ -75,7 +75,7 @@ input {
   padding: 0.4rem;
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
-  color: $primary-fg;
+  color: var(--fg-bright);
   background-color: $bg;
   box-shadow: none;
 }
