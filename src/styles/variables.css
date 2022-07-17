@@ -1,3 +1,53 @@
 :root {
-  --fg-bright: #fff;
+  @media (prefers-color-scheme: dark) {
+    --background-primary: #121212;
+    --background-secondary: #222;
+    --border: rgb(255 255 255 / 9%);
+    --text-primary: rgb(255 255 255 / 87%);
+    --text-secondary: rgb(255 255 255 / 60%);
+    --text-inactive: rgb(255 255 255 / 38%);
+    --text-link: #20609f;
+    --color-primary: #2673dd;
+    --color-secondary: rgb(38 115 221 / 30%);
+    --color-tertiary: rgb(38 115 221 / 14%);
+  }
+
+  @media (prefers-color-scheme: light) {
+    --background-primary: #f0f2f5;
+    --background-secondary: #fafafa;
+    --border: #e8e8e8;
+    --text-primary: rgb(0 0 0 / 87%);
+    --text-secondary: rgb(0 0 0 / 60%);
+    --text-inactive: rgb(0 0 0 / 38%);
+    --text-link: #20609f;
+    --color-primary: rgb(38 115 221);
+    --color-secondary: rgb(38 115 221 / 20%);
+    --color-tertiary: rgb(38 115 221 / 5%);
+  }
+}
+
+.light {
+  --background-primary: #f0f2f5;
+  --background-secondary: #fafafa;
+  --border: #e8e8e8;
+  --text-primary: rgb(0 0 0 / 87%);
+  --text-secondary: rgb(0 0 0 / 60%);
+  --text-inactive: rgb(0 0 0 / 38%);
+  --text-link: #20609f;
+  --color-primary: rgb(38 115 221);
+  --color-secondary: rgb(38 115 221 / 20%);
+  --color-tertiary: rgb(38 115 221 / 5%);
+}
+
+.dark {
+  --background-primary: #121212;
+  --background-secondary: #222;
+  --border: rgb(255 255 255 / 9%);
+  --text-primary: rgb(255 255 255 / 87%);
+  --text-secondary: rgb(255 255 255 / 60%);
+  --text-inactive: rgb(255 255 255 / 38%);
+  --text-link: #20609f;
+  --color-primary: #2673dd;
+  --color-secondary: rgb(38 115 221 / 30%);
+  --color-tertiary: rgb(38 115 221 / 14%);
 }

@@ -1,5 +1,9 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page, session } from "$app/stores";
+  import { setTheme } from "./stores/theme";
+  const toggleTheme = () => {
+    setTheme($session.theme === "light" ? "dark" : "light");
+  };
 </script>
 
 <header>
@@ -19,7 +23,7 @@
   </nav>
 
   <div class="corner">
-    <a href="https://github.com/"> github </a>
+    <button on:click={toggleTheme}>mode</button>
   </div>
 </header>
 
@@ -32,12 +36,14 @@
   nav {
     display: flex;
     justify-content: center;
+
     & a {
       display: flex;
       height: 100%;
       align-items: center;
       padding: 0 1em;
-      /* color: $primary-fg; */
+
+      color: var(--text-primary);
       font-weight: 700;
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -50,7 +56,9 @@
   .corner {
     width: 3em;
     height: 3em;
-    & a {
+
+    & a,
+    button {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -68,7 +76,6 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    /* background: $bg-dark; */
     background-size: contain;
   }
 
