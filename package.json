@@ -12,6 +12,9 @@
     "fix:css": "stylelint **/*.{pcss,css,html,svelte} --custom-formatter=node_modules/stylelint-formatter-pretty --fix"
   },
   "devDependencies": {
+    "@iconify/icons-mdi": "^1.2.26",
+    "@iconify/svelte": "^2.2.1",
+    "@iconify/types": "^1.1.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
