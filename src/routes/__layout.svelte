@@ -1,5 +1,5 @@
 <script>
-  import Header from "$lib/Header.svelte";
+  import Header from "$components/Header.svelte";
   import { session } from "$app/stores";
   import "$styles/app.css";
 </script>

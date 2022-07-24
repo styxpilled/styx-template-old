@@ -83,12 +83,43 @@ input {
   box-shadow: none;
 }
 
-input,
 button {
-  font-size: inherit;
-  font-family: inherit;
+  display: inline-block;
+  border: none;
+  padding: 1rem;
+  margin: 0;
+  text-decoration: none;
+  background: var(--color-primary);
+  color: var(--text-primary);
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 250ms ease-in-out, transform 150ms ease;
 
-  &:focus:not(:focus-visible) {
-    outline: none;
+  &:hover,
+  :focus {
+    background: var(--color-secondary);
   }
+
+  /* &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  } */
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.round {
+  border-radius: 0.5rem;
+}
+
+.icon {
+  font-size: 1em;
+}
+
+.hidden {
+  visibility: hidden;
 }

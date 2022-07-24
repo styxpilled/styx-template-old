@@ -24,6 +24,11 @@
     --color-secondary: rgb(38 115 221 / 20%);
     --color-tertiary: rgb(38 115 221 / 5%);
   }
+
+  --dark-primary: #121212;
+  --dark-secondary: #222;
+  --light-primary: #f0f2f5;
+  --light-secondary: #fafafa;
 }
 
 .light {
