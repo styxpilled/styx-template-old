@@ -16,6 +16,9 @@
         <li class:active={$page.url.pathname === "/about"}>
           <a sveltekit:prefetch href="/about">About</a>
         </li>
+        <li class:active={$page.url.pathname === "/404"}>
+          <a href="/404">404</a>
+        </li>
       </ul>
     </nav>
     <button>misc</button>
