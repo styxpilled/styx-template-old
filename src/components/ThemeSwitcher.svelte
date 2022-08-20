@@ -1,11 +1,10 @@
 <script lang="ts">
   import { browser } from "$app/env";
-  import { session } from "$app/stores";
-  import { setTheme } from "$lib/stores/theme";
-  let checked = $session.theme === "dark";
+  import { setTheme, theme } from "$lib/stores/theme";
+  let checked = $theme === "dark";
   $: {
     if (browser) {
-      setTheme(checked ? "dark" : "light");
+      $theme = setTheme(checked ? "dark" : "light");
     }
   }
 </script>

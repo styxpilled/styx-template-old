@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page, session } from "$app/stores";
+  import { page } from "$app/stores";
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
 </script>
 

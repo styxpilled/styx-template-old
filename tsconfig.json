@@ -38,6 +38,12 @@
       ],
       "$components/*": [
         "src/components/*"
+      ],
+      "$types": [
+        ".svelte-kit/types"
+      ],
+      "$types/*": [
+        ".svelte-kit/types/*"
       ]
     },
     "typeRoots": [

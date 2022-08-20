@@ -1,6 +1,8 @@
-import { session } from '$app/stores'
+import { writable } from "svelte/store";
 
-export const setTheme = (theme: 'light' | 'dark'): void => {
-  session.update(($session) => ({ ...$session, theme }));
-  fetch('/api/theme', { method: 'PUT', body: theme })
+export const setTheme = (theme: 'light' | 'dark'): 'light' | 'dark' => {
+  fetch('/api/theme', { method: 'PUT', body: theme });
+  return theme;
 }
+
+export const theme = writable('dark');
